@@ -19,7 +19,7 @@
 }
 
 .subtitle {
-  color: #8b88b1;
+  color: var(--second-color);
   font-size: var(--small-font-size);
 }
 

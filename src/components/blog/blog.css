@@ -52,7 +52,7 @@ blog__img {
   display: flex;
   column-gap: 0.6rem;
   font-size: var(--small-font-size);
-  color: #8b88b1;
+  color: var(--second-color);
 }
 
 .blog__dot {

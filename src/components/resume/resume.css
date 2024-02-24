@@ -4,7 +4,6 @@
 }
 
 .timeline {
-  background-color: var(--container-color);
   padding: 1.875rem;
   border-radius: var(--border-radius);
   position: relative;
@@ -13,8 +12,9 @@
 
 .timeline__item {
   position: relative;
-  padding-left: 3.125rem;
+  left: 3.125rem;
   padding-bottom: 3.125rem;
+  padding-left: 7%;
 }
 
 .timeline__item::before {
@@ -39,7 +39,7 @@
 }
 
 .timeline__date {
-  color: #8b88b1;
+  color: var(--first-color);
   font-size: var(--small-font-size);
 }
 

@@ -36,7 +36,7 @@ const Services = () => {
       <div className="services__container grid">
         {data.map(({ id, image, title, description }) => {
           return (
-            <div className="services__card" key={id}>
+            <div className="services__card glass" key={id}>
               <img src={image} alt="" className="services__img" />
 
               <h3 className="services__title">{title}</h3>

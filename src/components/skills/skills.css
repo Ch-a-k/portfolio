@@ -1,0 +1,26 @@
+.skills__container {
+  grid-template-columns: repeat(10, 1fr);
+  column-gap: 0.5rem;
+  row-gap: 1rem;
+}
+.skill__card {
+  text-align: center;
+}
+
+.skill__card i {
+  font-size: 3vw;
+}
+.skills__description {
+  font-size: var(--normal-font-size);
+}
+
+@media screen and (max-width: 600px) {
+  .skills__container {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 0.25rem;
+    row-gap: 0.5rem;
+  }
+  .skill__card i {
+    font-size: 5vw;
+  }
+}

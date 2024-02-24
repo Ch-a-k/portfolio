@@ -12,7 +12,7 @@
 }
 
 .work__item:hover {
-  color: var(--first-color);
+  color: var(--hover-color);
 }
 
 .work__container {

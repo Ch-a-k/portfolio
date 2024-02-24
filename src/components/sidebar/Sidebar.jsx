@@ -4,7 +4,7 @@ import Logo from "../../assets/logo.svg";
 
 const Sidebar = () => {
   return (
-    <aside className="aside">
+    <aside className="aside glass">
       <a href="#home" className="nav__logo">
         <img src={Logo} alt="" />
       </a>
@@ -20,6 +20,12 @@ const Sidebar = () => {
             <li className="nav__item">
               <a href="#about" className="nav__link">
                 <i className="icon-user-following"></i>
+              </a>
+            </li>
+
+            <li className="nav__item">
+              <a href="#skills" className="nav__link">
+                <i className="icon-book-open"></i>
               </a>
             </li>
 

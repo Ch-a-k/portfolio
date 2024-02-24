@@ -5,12 +5,12 @@
 :root {
   /* ===================== Colors ===================== */
   /* Color mode HSL (Hue, Saturation, Lightness) */
-  --first-color: #7997f3;
-  --title-color: #182441; /*Color 2*/
+  --first-color: rgb(40, 0, 97);
+  --second-color: rgb(124, 103, 154);
+  --title-color: #000; /*Color 2*/
   --text-color: #fff;
-  --body-color: #b5daff; /*Color 5*/
-  --container-color: #445a94; /*Color 3*/
-  --hover-color: red; /*Color 1*/
+  /* --container-color: #445a94; */
+  --hover-color: #d000ff; /*Color 1*/
   --services-title: #fff;
   --services-description: #fff;
 
@@ -79,7 +79,16 @@ textarea {
 }
 
 body {
-  background-color: var(--body-color);
+  background-color: rgba(21, 218, 218, 1);
+  background-image: radial-gradient(
+    circle,
+    rgba(21, 218, 218, 1) 0%,
+    rgba(137, 0, 228, 1) 20%,
+    rgba(21, 218, 218, 1) 40%,
+    rgba(137, 0, 228, 1) 60%,
+    rgba(21, 218, 218, 1) 80%,
+    rgba(197, 0, 255, 1) 100%
+  );
   line-height: 1.7;
   color: var(--text-color);
 }
@@ -146,7 +155,9 @@ img {
   left: -0.87;
   top: -0.87rem;
 }
-
+.email {
+  margin-bottom: 10px;
+}
 .btn {
   z-index: 10;
   padding: 0.75rem 2rem;
@@ -161,7 +172,7 @@ img {
 
 @keyframes button-push {
   50% {
-    transform: scale(0.8);
+    transform: scale(0.95);
   }
   100% {
     transform: scale(1);
@@ -169,5 +180,15 @@ img {
 }
 
 .btn:hover {
-  animation: button-push 0.3s linear 1;
+  animation: button-push 0.2s linear 1;
+  color: var(--hover-color);
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(0.5px);
+  -webkit-backdrop-filter: blur(0.5px);
+  border-radius: var(--border-radius);
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
