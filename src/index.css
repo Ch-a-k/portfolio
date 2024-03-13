@@ -1,0 +1,194 @@
+/* ===================== Font Awesome ===================== */
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap");
+
+/* ===================== Variables CSS ===================== */
+:root {
+  /* ===================== Colors ===================== */
+  /* Color mode HSL (Hue, Saturation, Lightness) */
+  --first-color: rgb(40, 0, 97);
+  --second-color: rgb(124, 103, 154);
+  --title-color: #000; /*Color 2*/
+  --text-color: #fff;
+  /* --container-color: #445a94; */
+  --hover-color: #d000ff; /*Color 1*/
+  --services-title: #fff;
+  --services-description: #fff;
+
+  /* ===================== Font and Typography ===================== */
+  /* .5rem = 8px | 1rem = 16px ... */
+  --body-font: "Rubik", sans-serif;
+  --h1-font-size: 2.25rem;
+  --h2-font-size: 1.5rem;
+  --h3-font-size: 1.25rem;
+  --normal-font-size: 1rem;
+  --small-font-size: 0.875rem;
+  -smaller-font-size: 0.813rem;
+  text-decoration: none;
+
+  /* ===================== Font Weight ===================== */
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+
+  /* ===================== Box-shadow ===================== */
+  --shadow: 0px 5px 20px 0px rgb(69 67 96 / 10%);
+
+  /* ===================== Border Radius ===================== */
+  --border-radius: 20px;
+}
+
+/* Responsive typography */
+@media screen and (max-width: 1024px) {
+  :root {
+    --body-font: "Rubik", sans-serif;
+    --h1-font-size: 1.75rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: 0.938rem;
+    --small-font-size: 0.813rem;
+    -smaller-font-size: 0.75rem;
+  }
+
+  .main {
+    margin-left: 50px;
+  }
+
+  .timeline {
+    margin-bottom: 20px;
+  }
+}
+
+/* ===================== Base ===================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+button,
+input,
+textarea {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+}
+
+body {
+  background-color: rgba(21, 218, 218, 1);
+  background-image: radial-gradient(
+    circle,
+    rgba(21, 218, 218, 1) 0%,
+    rgba(137, 0, 228, 1) 20%,
+    rgba(21, 218, 218, 1) 40%,
+    rgba(137, 0, 228, 1) 60%,
+    rgba(21, 218, 218, 1) 80%,
+    rgba(197, 0, 255, 1) 100%
+  );
+  line-height: 1.7;
+  color: var(--text-color);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--title-color);
+  font-weight: var(--font-semibold);
+  line-height: 1.2;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+/* ===================== Reusable CSS Classes ===================== */
+.container {
+  max-width: 1080px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+}
+
+.section {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+.section__title {
+  font-size: var(--h1-font-size);
+  margin-left: 0.875rem;
+  font-weight: var(--font-bold);
+  position: relative;
+  margin-bottom: 3.75rem;
+}
+
+.section__title::before {
+  content: "";
+  background: url(./assets/dots-bg.svg);
+  height: 2.25rem;
+  width: 2.25rem;
+  position: absolute;
+  left: -0.87;
+  top: -0.87rem;
+}
+.email {
+  margin-bottom: 10px;
+}
+.btn {
+  z-index: 10;
+  padding: 0.75rem 2rem;
+  line-height: 1;
+  border-radius: 1.875rem;
+  box-shadow: 0 0 1px rgb(0 0 0 / 0%);
+  color: #fff;
+  display: inline-block;
+  background-color: var(--first-color);
+  font-weight: var(--font-bold);
+}
+
+@keyframes button-push {
+  50% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.btn:hover {
+  animation: button-push 0.2s linear 1;
+  color: var(--hover-color);
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(0.5px);
+  -webkit-backdrop-filter: blur(0.5px);
+  border-radius: var(--border-radius);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
