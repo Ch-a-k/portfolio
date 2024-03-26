@@ -7,6 +7,7 @@ import Work6 from "../../assets/work-6.png";
 import Work7 from "../../assets/work-7.png";
 import Work8 from "../../assets/work-8.png";
 import Work9 from "../../assets/work-9.png";
+import Work10 from "../../assets/work-10.png";
 
 const Menu = [
   {
@@ -15,7 +16,7 @@ const Menu = [
     title:
       "This is my NGO org. I created the logo in Illustrator, created a Paralax effect",
     category: "Logomaking",
-    link: "https://ch-a-k.github.io/mad/",
+    link: "https://ch-a-k.github.io/MAD/",
   },
   {
     id: 2,
@@ -32,7 +33,6 @@ const Menu = [
     category: "Marketplace",
     link: "http://barbershop-borodinski.webflow.io/catalog",
   },
-  ,
   {
     id: 4,
     image: Work4,
@@ -40,7 +40,6 @@ const Menu = [
     category: "Design",
     link: "https://urpage.github.io/urpage/index.html",
   },
-  ,
   {
     id: 5,
     image: Work3,
@@ -75,6 +74,13 @@ const Menu = [
     title: "Main site for blockchain telegram project",
     category: "Blockchain",
     link: "https://freeton.com/en/",
+  },
+  {
+    id: 10,
+    image: Work10,
+    title: "Logic RPG game Dragon Myth without GUI",
+    category: "Application",
+    link: "https://github.com/Ch-a-k/RPG-game",
   },
 ];
 

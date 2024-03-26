@@ -63,7 +63,7 @@
 }
 
 .skills__bar {
-  background-color: #f1f1f1;
+  background-color: var(--text-color);
 }
 
 .skills__percentage {
@@ -72,43 +72,43 @@
 
 .development {
   width: 90%;
-  background-color: var(--hover-color);
+  background-color: var(--buttons-dots-color);
 }
 
 .ui__design {
   width: 80%;
-  background-color: var(--hover-color);
+  background-color: var(--buttons-dots-color);
 }
 
 .management {
   width: 90%;
-  background-color: var(--hover-color);
+  background-color: var(--buttons-dots-color);
 }
 
 .polish {
   width: 50%;
-  background-color: var(--first-color);
+  background-color: var(--buttons-dots-color);
 }
 
 .english {
   width: 80%;
-  background-color: var(--first-color);
+  background-color: var(--buttons-dots-color);
 }
 
 .ukrainian {
   width: 100%;
-  background-color: var(--first-color);
+  background-color: var(--buttons-dots-color);
 }
 
 .russian {
   width: 100%;
-  background-color: var(--first-color);
+  background-color: var(--buttons-dots-color);
 }
 
 .about__boxes {
   grid-template-columns: repeat(4, 1fr);
-  column-gap: 1.875rem;
-  margin-top: 4.35rem;
+  column-gap: 5vw;
+  margin-top: 5vw;
 }
 
 .about__box {
@@ -122,7 +122,7 @@
 }
 
 .about__title {
-  font-size: 1.875rem;
+  font-size: 3vw;
 }
 
 @media screen and (max-width: 600px) {
@@ -150,6 +150,7 @@
     grid-template-columns: repeat(2, 1fr);
     column-gap: 0;
     margin-top: none;
+    padding: 0;
   }
 
   .about__box {

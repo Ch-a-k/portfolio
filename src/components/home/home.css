@@ -49,6 +49,17 @@
 
 .home__scroll-name {
   font-size: var(--small-font-size);
+  text-decoration: none;
+  color: var(--text-color);
+  border: 1px solid var(--hover-color);
+  background-color: var(--hover-color);
+  padding: 5px;
+  border-radius: 50px;
+}
+
+.home__scroll-name:hover {
+  animation: button-push 0.2s linear 1;
+  color: var(--title-color);
 }
 
 .mouse {

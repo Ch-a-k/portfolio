@@ -8,6 +8,7 @@ import Portfolio from "./components/portfolio/Portfolio"
 import Testimonials from "./components/testimonials/Testimonials"
 import Contact from "./components/contact/Contact"
 import Skills from './components/skills/Skills'
+import Certificates from './components/certificates/Certificates'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Home />
         <About />
         <Skills />
+        <Certificates />
         <Services />
         <Resume />
         <Portfolio />

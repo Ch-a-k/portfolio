@@ -1,4 +1,5 @@
 .aside {
+  background-color: var(--sidebar-color);
   position: fixed;
   border-radius: 0 !important;
   left: 0;

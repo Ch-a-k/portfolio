@@ -8,7 +8,7 @@ const HeaderSocials = () => {
         className="home__social-link"
         target="_blanc"
       >
-        <i class="fa-brands fa-square-facebook"></i>
+        <i className="fa-brands fa-square-facebook"></i>
       </a>
 
       <a
@@ -16,7 +16,7 @@ const HeaderSocials = () => {
         className="home__social-link"
         target="_blanc"
       >
-        <i class="fa-brands fa-linkedin"></i>
+        <i className="fa-brands fa-linkedin"></i>
       </a>
 
       <a
@@ -24,7 +24,7 @@ const HeaderSocials = () => {
         className="home__social-link"
         target="_blanc"
       >
-        <i class="fa-brands fa-github"></i>
+        <i className="fa-brands fa-github"></i>
       </a>
     </div>
   );

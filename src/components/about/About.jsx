@@ -1,8 +1,7 @@
 import React from "react";
 import "./about.css";
-import AboutImg from "../../assets/avatar-4.png";
 import AboutBox from "./AboutBox";
-import MyCV from "../about/CVplus.pdf";
+import MyCV from "../about/CV Artur Chuikov.pdf";
 
 const About = () => {
   return (
@@ -11,12 +10,11 @@ const About = () => {
 
       <div className="about__container grid">
         <div className="about__video">
-          {/* <img src={AboutImg} alt="" className="about__img" /> */}
           <iframe
             className="glass"
             src="https://www.youtube.com/embed/m1BU5_HTLr8"
             title="YouTube video"
-            allowfullscreen
+            allowFullScreen
           ></iframe>
         </div>
         {/* Videoplayer from YouTube */}
@@ -24,20 +22,24 @@ const About = () => {
         <div className="about__data glass grid">
           <div className="about__info controls">
             <p className="about__description">
-              I am Artur, a web developer from Ukraine. I have extensive skills
-              in designing and building websites and also have a good
-              understanding of React, Next.js and WordPress. By the way, this
-              resume is written entirely in React. I have experience with
-              blockchain applications, I have good practice in team management,
-              project management, as I used to be a co-owner of an IT-company,
-              Kotora was forced to close because of the war. Now I am looking
-              for a good company, a good team, where I can steadily develop as a
-              developer, because I like it.
+              Greetings everyone! I am a professional with diverse experience in
+              IT and beyond, demonstrating exceptional adaptability and
+              intercultural competence. With strong leadership qualities and
+              communication skills, I have successfully managed teams and
+              projects in various fields, from human rights to IT technologies.
+              My ability to learn quickly and adapt to new challenges, combined
+              with motivation and the ability to work in a multicultural
+              environment, make me a valuable asset to any organization aiming
+              for innovation and development. I am ready to take on the role of
+              director, leader, companion, advisor, designer, or frontend
+              developer in your company. However, I give priority to frontend or
+              web development. With great respect, looking forward to meeting
+              you!
             </p>
             <p className="contact__details">tel: +48 512 722 470</p>{" "}
             <p>WhatsApp: +38 073 07 08 088</p>
             <p className="email">email: it.zero.developer@gmail.com</p>
-            <a className="btn" href={MyCV} download="My_File.pdf">
+            <a className="btn" href={MyCV} download="Artur Chuikov CV.pdf">
               {" "}
               Download CV{" "}
             </a>
@@ -46,7 +48,7 @@ const About = () => {
           <div className="about__skills grid">
             <div className="skills__data">
               <div className="skills__titles">
-                <h3 className="skills__name">Development</h3>
+                <h3 className="skills__name">Frontend dev.</h3>
                 <span className="skills__number">90%</span>
               </div>
 

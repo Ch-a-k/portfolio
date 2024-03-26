@@ -26,7 +26,7 @@ blog__img {
 
 .blog__category {
   color: #fff;
-  background-color: var(--first-color);
+  background-color: var(--buttons-dots-color);
   border-bottom-left-radius: 0.9375rem;
   border-bottom-right-radius: 0.9375rem;
   position: absolute;
